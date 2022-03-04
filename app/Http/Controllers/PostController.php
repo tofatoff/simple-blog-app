@@ -11,7 +11,7 @@ class PostController extends Controller
 		//return di bawah ini copas dari web.php dan yg di web.phpnya apus aja
 		return view('posts',[
 			"title" => "Posts",
-			"posts" => Post::all()
+			"posts" => Post::latest()->get()
 		]);
 	}
 
