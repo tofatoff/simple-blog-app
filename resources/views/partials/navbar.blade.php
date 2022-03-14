@@ -9,10 +9,10 @@
         </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav ms-auto">
-                    <a class="nav-link {{ $active==="Home" ? "active":"" }}" aria-current="page" href="/#">Home</a>
+                    <a class="nav-link {{ $active==="home" ? "active":"" }}" aria-current="page" href="/#">Home</a>
                     <a class="nav-link" href="/#about">About</a>
                     <a class="nav-link {{ $active==="posts" ? "active":"" }}" href="/posts">My blog posts</a>
-                    <a class="nav-link {{ $active==="Categories" ? "active":"" }}" href="/posts">Post categories</a>
+                    <a class="nav-link {{ $active==="Categories" ? "active":"" }}" href="/categories">Post categories</a>
                 </div>
             </div>
         </div>
