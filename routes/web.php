@@ -39,7 +39,7 @@ Route::get('/categories/{category:slug}', function(Category $category){
     return view('posts',[
         'title' => "Post By Category: $category->name",
         "active" => "posts",
-        'posts' => $category->posts->load('author','posts')
+        'posts' => $category->posts->load('category','posts')
     ]);
 });
 
