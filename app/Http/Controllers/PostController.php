@@ -25,7 +25,7 @@ class PostController extends Controller
 		return view('posts',[
 			"title" => "All Posts".$title,
 			"active" => "posts",
-			"posts" => Post::latest()->filter(request(['search','category','author']))->get() //with dipindah ke model
+			"posts" => Post::latest()->filter(request(['search','category','author']))->paginate(4)->withQueryString() //with dipindah ke model
 		]);
 	}
 	
